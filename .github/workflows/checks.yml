@@ -1,0 +1,23 @@
+name: Notebook checks
+on: [push, pull_request]
+jobs:
+  fixture-checks:
+    runs-on: ubuntu-latest
+    env:
+      CUDA_VISIBLE_DEVICES: '-1'
+      TF_CPP_MIN_LOG_LEVEL: '2'
+      MPLBACKEND: Agg
+      MPLCONFIGDIR: ${{ github.workspace }}/.cache/matplotlib
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python -m pytest -q
+      - run: python scripts/execute_notebooks.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: executed-notebooks
+          path: artifacts/notebooks/

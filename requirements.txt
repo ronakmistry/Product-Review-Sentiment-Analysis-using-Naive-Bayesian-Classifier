@@ -1,0 +1,11 @@
+numpy==2.0.2
+matplotlib==3.10.1
+nbformat==5.10.4
+nbconvert==7.16.6
+nbclient==0.10.2
+ipykernel==6.29.5
+pytest==8.3.5
+scikit-learn==1.6.1
+pandas==2.2.3
+textblob==0.19.0
+joblib==1.6.0

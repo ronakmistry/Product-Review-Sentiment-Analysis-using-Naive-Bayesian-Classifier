@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+data/
+artifacts/
+.cache/
+*.keras
+*.h5
+*.npz
+*.p
+.DS_Store
