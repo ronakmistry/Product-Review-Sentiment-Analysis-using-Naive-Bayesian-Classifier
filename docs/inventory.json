@@ -1,0 +1,24 @@
+{
+  "starting_commit": "077843b2fbdc63459312d26370f7cc05d7d9e9a8",
+  "original_files": [
+    ".ipynb_checkpoints/Ronak_Mistry_Amazon_Scraping-checkpoint.ipynb",
+    "LICENSE",
+    "Ronak_Mistry_Amazon_Scraping.ipynb"
+  ],
+  "original_environment": "Python 3.6.3; unpinned dependencies; see historical notebooks",
+  "restoration_environment": "Python 3.12",
+  "historical_results": "Saved ROC AUC 0.89980625927258018, mislabeled as accuracy; unverified and based on pseudo-labels.",
+  "missing_resources": [
+    "Final_Amazon_Reviews.csv",
+    "independently labeled review test data"
+  ],
+  "original_dependencies": [
+    "lxml",
+    "requests",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "textblob",
+    "nltk"
+  ]
+}
